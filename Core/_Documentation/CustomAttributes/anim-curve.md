@@ -44,10 +44,10 @@ Creates an AnimCurveAttribute instance with time and value clamped between 0 and
 ---
 
 ```cs
-public AnimCurveAttribute(AnimCurveColor _CurveColor)
+public AnimCurveAttribute(EColor _CurveColor)
 ```
 
-Creates an AnimCurveAttribute instance with time and value clamped between 0 and 1. Sets the curve color using the given `AnimCurveColor` value.
+Creates an AnimCurveAttribute instance with time and value clamped between 0 and 1. Sets the curve color using the given `EColor` value.
 
 ---
 
@@ -60,10 +60,10 @@ Creates an AnimCurveAttribute instance with time clamped between 0 and the given
 ---
 
 ```cs
-public AnimCurveAttribute(float _MaxTime, float _MaxValue, AnimCurveColor _CurveColor)
+public AnimCurveAttribute(float _MaxTime, float _MaxValue, EColor _CurveColor)
 ```
 
-Creates an AnimCurveAttribute instance with time clamped between 0 and the given max time, and value clamped between 0 and the given max value. Sets the curve color using the given `AnimCurveColor` value.
+Creates an AnimCurveAttribute instance with time clamped between 0 and the given max time, and value clamped between 0 and the given max value. Sets the curve color using the given `EColor` value.
 
 ---
 
@@ -76,10 +76,10 @@ Creates an AnimCurveAttribute instance with time clamped between the given min a
 ---
 
 ```cs
-public AnimCurveAttribute(float _MinTime, float _MaxTime, float _MinValue, float _MaxValue, AnimCurveColor _CurveColor)
+public AnimCurveAttribute(float _MinTime, float _MaxTime, float _MinValue, float _MaxValue, EColor _CurveColor)
 ```
 
-Creates an AnimCurveAttribute instance with time clamped between the given min and max time, and value clamped between the min and max value. Sets the curve color using the given `AnimCurveColor` value.
+Creates an AnimCurveAttribute instance with time clamped between the given min and max time, and value clamped between the min and max value. Sets the curve color using the given `EColor` value.
 
 ---
 
@@ -128,10 +128,10 @@ Gets the max value (Y axis) of the AnimationCurve editor.
 ---
 
 ```cs
-public Color GetCurveColor(AnimCurveColor)
+public Color GetCurveColor(EColor _Color)
 ```
 
-Gets the `Color` instance relative to the given `AnimCurveColor` value.
+Gets the `Color` instance relative to the given `EColor` value.
 
 ---
 
@@ -165,23 +165,6 @@ public override void OnGUI(Rect _Position, SerializedProperty _Property, GUICont
 
 Draws the AnimationCurve editor for the given property, using the linked `AnimCurveAttribute` values.
 
-## Enumerations
+## Colors
 
-### `AnimCurveColor`
-
-```cs
-public enum AnimCurveColor
-{
-    Black,
-    Blue,
-    Cyan,
-    Gray,
-    Green,
-    Grey,
-    Magenta,
-    Orange,
-    Red,
-    White,
-    Yellow
-}
-```
+[=> See `Colors` and `EColor` documentation](../Others/colors.md)

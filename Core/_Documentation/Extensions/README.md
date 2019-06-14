@@ -12,6 +12,8 @@ Contains extensions for native types or UnityEngine library classes.
 - [`AnimationCurve` extensions](./animation-curve.md)
 - [`Camera` extensions](./camera.md)
 - [`Color` extensions](./color.md)
+- [`GameObject` extensions](./game-object.md)
 - [`GUIStyle` extensions](./gui-style.md)
 - [`Input` extensions](./input.md)
+- [`MonoBehaviour` extensions](./mono-behaviour.md)
 - [`Rect` extensions](./rect.md)

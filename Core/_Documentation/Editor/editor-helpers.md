@@ -72,6 +72,16 @@ Gets the EditorWindow instance of the named window.
 
 * `string _WindowTitle`: The name of the window to get. For example, you can get the Inspector view by passing "Inspector" as parameter
 
+---
+
+```cs
+public static Type GetPropertyType(SerializedProperty _Property)
+```
+
+Gets the C# type of the given SerializedProperty.
+
+Returns the found property type, or null if the property path can't be used to get final type.
+
 ## Assets helpers
 
 ```cs
